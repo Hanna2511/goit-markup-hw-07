@@ -227,23 +227,23 @@ height: 100%;
  .menu {
      display: inline-flex;
  }
- .menu-item:not(:last-child) {
+ .menu__item:not(:last-child) {
      margin-right: 50px;
  }
 
- .menu-link {
+ .menu__link {
     display: flex;
     align-items: center;
     cursor: pointer;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--primary-text-color);
  }
- .menu-link:hover,
- .menu-link:focus {
+ .menu__link:hover,
+ .menu__link:focus {
      color: var(--accent-color);
  }
- .menu-item:hover .icon,
- .menu-item:focus .icon {
+ .menu__item:hover .icon,
+ .menu__item:focus .icon {
     fill: var(--accent-color);
  }
 .link {
@@ -266,14 +266,14 @@ height: 100%;
 .icon-envelopehsvg .icon{
 margin-right: 10px;
 }
- .header .container,
- .header .portfolio-container {
+ .header__container,
+ .header__portfolio-container {
      display: flex;
      justify-content: center;
      align-items: center;
  }
 
- .header .logo {
+ .header__logo {
      margin-right: 93px;
  }
  .navigation,
@@ -302,7 +302,7 @@ margin-right: 10px;
     margin-right: auto;
 }
 
-.hero-title {
+.hero__title {
     color: var(--title-name-color);
     font-style: normal;
     font-weight: 900;
@@ -320,7 +320,7 @@ margin-right: 10px;
 }
 
 /* Button */
-.hero .knob {
+.hero__knob {
     color: var(--title-name-color);
     background-color: var(--accent-color);
     font-style: normal;
@@ -934,10 +934,10 @@ flex-wrap: wrap;
     border-radius: 4px;
     transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btd-close-icon{
+.modal__btd-close-icon{
     font-size: 20px;
 }
-.btd-close {
+.modal__modal__btd-close {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -948,7 +948,7 @@ flex-wrap: wrap;
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-.btd-close-icon:hover {
+.modal__btd-close-icon:hover {
  fill: var(--accent-color);
 
 }
