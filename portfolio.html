@@ -9,31 +9,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-<body class="potrfolio-page">
+<body class="potrfolio">
         <!-- шапка -->
         <header class=" page header">
-            <div class="portfolio-container header__portfolio-container"> 
+            <div class="portfolio__container header__portfolio__container"> 
             <nav class="portfolio-navigation">
-            <a href="./index.html" class="logo header__logo"> <span class="logo-color">Web</span> Studio</a>
+            <a href="./index.html" class="logo header__logo"> <span class="logo__color">Web</span> Studio</a>
          <ul class="site-nav list menu">
             <li class="menu__item"><a href="./index.html" class="link menu__link "> Студия</a></li>
-            <li class="menu__item"><a href="portfolio.html" class="link current menu__link " >Портфолио</a></li>
+            <li class="menu__item"><a href="portfolio.html" class="link current site-nav__current  menu__link " >Портфолио</a></li>
             <li class="menu__item"><a href="" class="link menu__link">Контакты</a></li>
          </ul>
              </nav>
          <ul class="contacts-nav list menu"> 
             <li class="menu__item"> 
-                <a href="mailto:info@devstudio.com" class="item menu__link icon-envelopehsvg"> 
-                    <svg class="icon" width= "16" height= "12" fill= "currentcolor">
-                        <use class="icon-envelopehsvg" href="./images/sprite.svg.svg#icon-envelopehsvg"> </use>
+                <a href="mailto:info@devstudio.com" class="item menu__link "> 
+                    <svg class="icon menu__item-icon" width= "16" height= "12" fill= "currentcolor">
+                        <use href="./images/sprite.svg.svg#icon-envelopehsvg"> </use>
                     </svg>
                     info@devstudio.com
                 </a>
              </li>
          <li class="menu__item">
-             <a href="tel:+380961111111" class="item menu__link icon-Vector"> 
-                <svg class="icon" width= "10" height= "16" fill= "currentcolor"> 
-                    <use class="icon-Vector" href="./images/tel.svg.svg#icon-Vector"> 
+             <a href="tel:+380961111111" class="item menu__link "> 
+                <svg class="icon menu__item-icon" width= "10" height= "16" fill= "currentcolor"> 
+                    <use  href="./images/tel.svg.svg#icon-Vector"> 
                     </use>
                 </svg>
                  +38 096 111 11 11
@@ -44,9 +44,9 @@
         </header> 
        <!-- тело -->
        <main>
-            <div class="portfolio-container">
+            <div class="portfolio__container">
             <h1 class="visually-hidden"> Наши работы</h1>
-            <nav class="portfolio-navigator">
+            <nav class="portfolio__navigator">
               <div class="project-button" > 
                  <button type="button" class="button "> Все </button> 
                  <button type="button" class="button "> Веб-сайты </button>  
@@ -166,10 +166,10 @@
 
        <!-- футер -->
    <footer class="footer">
-       <div class="portfolio-container-footer">
-    <div class="footer-portfolio">
-        <a href="./index.html" class="logo"> 
-            <span class="logo-footer">Web</span>
+       <div class="container  contacts-blocks footer__contacts-blocks">
+    <div class="footer__studio">
+        <a href="./index.html" class="logo footer__studio-logo"> 
+            <span class="logo__footer">Web</span>
             <span class="logo-studio">Studio </span> 
         </a>
      <address>
@@ -184,29 +184,29 @@
     <div class="footer-portfolio-social-list">
         <h3 class="footer-portfolio-social-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
         <ul class="list footer-social-icons">
-            <li class="footer-portfolio-social-icons-item">
-                <a href="" class="footer-portfolio-social-icons-link" target="_blank" rel="noopener noreferrer">
+            <li class="footer-portfolio-social-icons__item">
+                <a href="" class="footer-portfolio-social-icons__link" target="_blank" rel="noopener noreferrer">
                     <svg class="icon footer-portfolio-icon" width="20" height="20">
                         <use href=" ./images/sprite.svg.svg#icon-instagramsvg"></use>
                     </svg>
                 </a>
             </li>
-            <li class="footer-portfolio-social-icons-item">
-                <a href="" class="footer-social-icons-link" target="_blank" rel="noopener noreferrer">
+            <li class="footer-portfolio-social-icons__item">
+                <a href="" class="footer-social-icons__link" target="_blank" rel="noopener noreferrer">
                     <svg class="icon footer-icon" width="20" height="20">
                         <use href="./images/sprite.svg.svg#icon-twittersvg"></use>
                     </svg>
                 </a>
             </li>
-            <li class="footer-social-icons-item">
-                <a href="" class="footer-social-icons-link" target="_blank" rel="noopener noreferrer">
+            <li class="footer-social-icons__item">
+                <a href="" class="footer-social-icons__link" target="_blank" rel="noopener noreferrer">
                     <svg class="icon footer-icon" width="20" height="20">
                         <use href="./images/sprite.svg.svg#icon-facebooksvg"></use>
                     </svg>
                 </a>
             </li>
-            <li class="footer-social-icons-item">
-                <a href="" class="footer-social-icons-link" target="_blank" rel="noopener noreferrer">
+            <li class="footer-social-icons__item">
+                <a href="" class="footer-social-icons__link" target="_blank" rel="noopener noreferrer">
                     <svg class="icon footer-icon" width="20" height="20" >
                         <use href="./images/sprite.svg.svg#icon-linkedinsvg"></use>
                     </svg>
