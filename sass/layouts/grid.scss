@@ -41,8 +41,8 @@ background-color: var(--title-name-color);
 .grid__foto{
     position: relative;
     opacity: 1;
-}
-.grid__foto::before {
+
+&::before {
     display: inline-block;
     position: absolute;
     content: "";
@@ -51,7 +51,7 @@ background-color: var(--title-name-color);
      bottom: 0;
      background-color: rgba(47, 48, 58, 0.8);
 }
-
+}
 .grid__foto-text {
     display: flex;
     position: absolute;

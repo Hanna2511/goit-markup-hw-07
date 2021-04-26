@@ -14,13 +14,12 @@
   color: var(--primary-text-color);
 }
 
-.menu__link:hover,
-.menu__link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.menu__item:hover .icon,
-.menu__item:focus .icon {
+.menu__link:hover .icon,
+.menu__link:focus .icon {
   fill: var(--accent-color);
 }
 /*# sourceMappingURL=menu.css.map */

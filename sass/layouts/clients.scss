@@ -25,17 +25,20 @@
     transition-property: background-color, color, box-shadow, border;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);  
-}
 
-.clients__link:hover,
-.clients__link:focus {
+
+&:hover,
+&:focus {
     background-color:var(--title-name-color);   
     border: 1px solid #2196F3;
 }
-.clients__link:hover .icon,
-.clients__link:focus .icon{
+&:hover .icon,
+&:focus .icon{
     fill: var(--accent-color);
 }
+
+}
+
 .clients__list  {
     display: flex;
 }

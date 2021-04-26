@@ -27,9 +27,7 @@
     border-radius: 4px;
     transition:transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__btd-close-icon{
-    font-size: 20px;
-}
+
 .modal__btd-close {
     position: absolute;
     top: 8px;
@@ -41,9 +39,13 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
 }
-.modal__btd-close-icon:hover {
+.modal__btd-close-icon{
+  font-size: 20px;
+
+&:hover {
  fill: var(--accent-color);
 
+}
 }
 .backdrop.is-hidden .modal {
     transform: translate(-50%, -50%) scale(0.6);
@@ -61,7 +63,13 @@
       
         margin-bottom: 10px;
         position: relative;
+    
+
+      &:focus {
+        border-color: var(--accent-color);
+        outline: none;
       }
+    }
  .modal-form__line-input {
         width: 448px;
         height: 40px;
@@ -71,7 +79,11 @@
         border: 1px solid rgba(33, 33, 33, 0.2);
         box-sizing: border-box;
         border-radius: 4px;
+    
+      &:focus + .modal-form__line-icon {
+        fill: var(--accent-color);
       }
+    }
  .modal-form__line-icon {
         height: 18px;
         width: 18px;
@@ -112,13 +124,8 @@
       
         color: rgba(117, 117, 117, 0.5);
       }
- .modal-form__line :focus {
-        border-color: var(--accent-color);
-        outline: none;
-      }
- .modal-form__line-input:focus + .modal-form__line-icon {
-        fill: var(--accent-color);
-      }
+ 
+ 
  .modal-form__check {
         margin-top: 20px;
         margin-bottom: 30px;
@@ -137,7 +144,16 @@
         -webkit-appearance: none;
         -moz-appearance: none;
         position: absolute;
+     
+      &:checked + .modal-form__check-icon {
+        background-color: var(--accent-color);
+        background-image: url(../images/Vecto.svg);
+        border: none;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
       }
+    }
  .modal-form__check-icon {
         display: inline-block;
         border: 2px solid black;
@@ -147,14 +163,7 @@
         background-color:var(--title-name-color);
         background-image: url();
       }
- .modal-form__check-input:checked + .modal-form__check-icon {
-        background-color: var(--accent-color);
-        background-image: url(../images/Vecto.svg);
-        border: none;
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
+ 
 .modal-form__check-labelcolor {
         color: var(--accent-color);
       }
@@ -176,10 +185,11 @@
         letter-spacing: 0.06em;
         cursor: pointer;
         color:var(--title-name-color);
-      }
-.modal-form__button:hover,
-.modal-form__button:focus { 
+    
+&:hover,
+&:focus { 
         background: var(--accent-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
       }
+    }
